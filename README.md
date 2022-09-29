@@ -17,6 +17,22 @@ exit
 rosrun hello_pkg making_cmd_vel.py # cmd_vel: vx = 1.0を出力．
 ```
 
+## How to use script/recode_camera_iamge.py
+カメラを起動します．ここでは，以下のようにusb_camを利用します．
+```bash
+rosrun usb_cam usb_cam_node
+```
+次に，以下を実行します．
+実行するとimgsディレクトリにカメラ画像を記録していきます．
+```bash
+roscd hello_pkg/script
+mkdir imgs
+
+chmod +x recode_camera_image.py
+
+rosrun hello_pkg recode_camera_image.py
+```
+
 ## 補足
 ### Rosパッケージの作り方！
 
